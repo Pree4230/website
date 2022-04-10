@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Preethi Scrolling Website | About Me!</title>
+
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <link rel="stylesheet" href="styles.css">
+  <section>
+    <header>
+      <!--set about page as active-->
+      <img src="propic1.png" class="Preethi">
+
+      <a href="#" class="logo">Preethi Reddy Nandanuru</a>
+      <div class="toggle"></div>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <div class="about">
+        <h2>About Me!</h2>
+        <p> Hello! I am Preethi Reddy Nandanuru. I am a graduate student at University of Illinois at Chicago. I am currently doing my masters in Management Information Systems.
+          I am also working as IT support at UIC college of Nursing. My job responsibilities include Network administration functions such as setting up network user accounts, reset passwords, administered group policies and Active directory for
+          college.
+          Responsible for imaging systems, automated software deployment using SCCM and drivers installation.
+          Configuring VPN and troubleshooting windows server and OS using SCCM.
+          Apart from this, my passions include writing, photography, playing volley ball and cricket.
+          Upon graduation, I would like to work as Business analyst
+        <div class="button">
+          <div class="content">
+            <span class="button-text">Download</span>
+
+          </div>
+        </div>
+
+        </p>
+      </div>
+    </div>
+
+
+
+  </section>
+</body>
+<script>
+  const menuToggle = document.querySelector('.toggle');
+  menuToggle.onclick = function() {
+    menuToggle.classList.toggle('active')
+  }
+</script>
+
+</html>

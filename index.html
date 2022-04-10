@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Preethi's Personal Site</title>
+</head>
+<body>
+  <link rel="stylesheet" href="styles.css">
+
+
+<section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<header>
+  <a href="#" class="logo">Preethi Reddy Nandanuru</a>
+  <div class="toggle"></div>
+<div class="toggle"></div>
+<ul class="navigation">
+<li><a href="index.html" class="active">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+</header>
+
+<div class="row">
+  <div class="col-md-6">
+
+    <h1 class="ml4">
+      <span class="letters letters-1">Who</span>
+      <span class="letters letters-2">Am</span>
+      <span class="letters letters-3">I?</span>
+    </h1>
+
+    </div>
+<div class="col-md-6">
+  <div class="content">
+            <div class="textBox">
+                <h2>Welcome to my site!</h2>
+
+            </div>
+        </div>
+
+</div>
+</div>
+
+<section id= "welcome">
+
+  <p> Hello! I'm Preethi Reddy Nandanuru! I am a graduate student at the University of Illinois at Chicago. I have created this website as a part of my assignment. I had so much fun creating this website. Take a look around and let me know how it looks by sending me a message. Thank you!</p>
+
+  <img src="profile pic.png" class="center">
+  <div class="text-center">
+    <p><em>Grad student at <strong><a href="https://www.uic.edu/">The University of Illinois at Chicago</a></strong></em> </p>
+  </div>
+
+
+</section>
+
+</ul>
+
+</section>
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+    }
+</script>
+
+<script>
+var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+
+</script>
+</html>4
+</html>
